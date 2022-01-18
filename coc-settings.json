@@ -1,0 +1,31 @@
+{
+    "coc.preferences.colorSupport": true,
+    "list.normalMappings": {
+        "q": "do:exit"
+    },
+    "python": {
+        "analysis": {
+            "diagnosticMode": "workspace"
+        },
+        "linting": {
+            "mypyEnabled": true,
+            "mypyArgs": [
+                "--cache-dir=/dev/null"
+            ]
+        }
+    },
+    "explorer": {
+      "position": "right",
+      "root": {
+          "strategies": ["workspace"]
+      },
+      "icon": {
+          "enableNerdfont": true
+      },
+      "file": {
+          "hiddenRules": {
+              "filenames": ["__pycache__"]
+          }
+      }
+    }
+}
