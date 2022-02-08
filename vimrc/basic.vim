@@ -23,7 +23,6 @@ set tabstop=2
 
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-
 " Colorscheme
 colorscheme papercolor
 set background=light
@@ -44,3 +43,4 @@ set hlsearch
 
 " Makes search act like search in modern browsers
 set incsearch 
+

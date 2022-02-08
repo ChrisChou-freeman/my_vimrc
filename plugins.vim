@@ -18,6 +18,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " => file type
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'plasticboy/vim-markdown'
+Plug 'vim-python/python-syntax'
 Plug 'Vimjas/vim-python-pep8-indent'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -30,5 +31,10 @@ Plug 'tpope/vim-fugitive'
 " => colorscheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'morhetz/gruvbox'
+
 call plug#end()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Fast editing and reloading of vimrc configs
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd! bufwritepost ~/.config/vim/plugins.vim source ~/.config/vim/plugins.vim

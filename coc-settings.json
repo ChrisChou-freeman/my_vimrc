@@ -11,7 +11,8 @@
             "mypyEnabled": true,
             "mypyArgs": [
                 "--cache-dir=/dev/null"
-            ]
+            ],
+						"flake8Enabled": true
         }
     },
     "explorer": {
